@@ -16,6 +16,7 @@
   --primary-accent-hover: #6b6ab8; /* Darker Teal */
   --league-accent: #c89b3c; /* Coral Orange */
   --league-accent-hover: #b8862e; /* Darker Coral Orange */
+  --primary-accent-rgb: 120, 119, 198;
 
   /* Gradients & Decorative */
   --grad-1-start: #7877c6;
@@ -62,10 +63,11 @@
   --secondary-background: #1a2633;
 
   /* Accents */
-  --primary-accent: #25a898;
+  --primary-accent: rgb(37, 168, 152);
   --primary-accent-hover: #1a7c70;
   --league-accent: #f2955c;
   --league-accent-hover: #d97031;
+  --primary-accent-rgb: 37, 168, 152;
 
   /* Gradients & Decorative */
   --grad-1-start: #00e1ff;
@@ -146,6 +148,7 @@ body::before {
 
 .aws-link:hover {
   background: var(--primary-accent-hover);
+  box-shadow: 0 8px 25px rgba(var(--primary-accent-rgb), 0.5);
   transform: translateY(-1px);
 }
 
@@ -205,6 +208,12 @@ main {
   border: 3px solid var(--border-color);
   margin: 0 auto 20px auto;
   display: block;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 30px rgba(var(--primary-accent-rgb), 0.6);
 }
 
 .fun-facts {
@@ -355,6 +364,7 @@ main {
 
 .cta-button:hover {
   background: var(--primary-accent-hover);
+  box-shadow: 0 8px 25px rgba(var(--primary-accent-rgb), 0.5);
   transform: translateY(-1px);
 }
 
@@ -481,6 +491,7 @@ main {
 
 .contact-submit-btn:hover {
   background: var(--primary-accent-hover);
+  box-shadow: 0 8px 25px rgba(var(--primary-accent-rgb),0.5);
   transform: translateY(-1px);
 }
 
@@ -548,7 +559,7 @@ main {
   width: 100%;
   padding: 12px 16px;
   border: 1px solid var(--border-color);
-  color: white;
+  color: var(--secondary-text);
   border-radius: 6px;
   font-size: 16px;
   background: var(--secondary-background);
@@ -559,7 +570,7 @@ main {
   outline: none;
   border-color: var(--league-accent);
   background: var(--background-card);
-  color: white;
+  color: var(--secondary-text);
   box-shadow: 0 0 0 3px rgba(200, 155, 60, 0.1);
 }
 
@@ -579,7 +590,8 @@ main {
 
 .lookup-submit-btn:hover {
   background: var(--league-accent-hover);
-  transform: translateY(-1px);
+  box-shadow: 0 8px 25px var(--league-accent);
+  transform: translateY(-2px);
 }
 
 .lookup-submit-btn:disabled {
