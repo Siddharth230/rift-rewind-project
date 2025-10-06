@@ -4,12 +4,12 @@
   /* -- Serene Coast (Light Theme) -- */
 
   /* Palette */
-  --background-main: #ffffff; /* Seashell White */
-  --background-card: #ffffff; /* Pure White */
+  --background-main: #b3bcca; /* Seashell White */
+  --background-card: #ffffff48; /* Pure White */
   --primary-text: #232f3e; /* Deep Ocean Blue */
   --secondary-text: #687078; /* Slate Blue */
   --border-color: #e5e7eb; /* Light Fog */
-  --secondary-background: #f8fafc;
+  --secondary-background: #c9ced3;
 
   /* Accents */
   --primary-accent: #7877c6; /* Teal */
@@ -66,6 +66,16 @@
   --primary-accent-hover: #1a7c70;
   --league-accent: #f2955c;
   --league-accent-hover: #d97031;
+
+  /* Gradients & Decorative */
+  --grad-1-start: #00e1ff;
+  --grad-1-end: #264a55;
+  --grad-2-start: #f09744;
+  --grad-2-end: #694523;
+  --grad-3-start: #e966d3;
+  --grad-3-end: #8f3980;
+  --grad-4-start: #4af358;
+  --grad-4-end: #2d7733;
 
   /* State & Notifications */
   --success-bg: #1c3a30;
@@ -334,7 +344,7 @@ main {
 .cta-button {
   display: inline-block;
   background: var(--primary-accent);
-  color: var(--background-card);
+  color: white;
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 6px;
@@ -457,7 +467,7 @@ main {
 
 .contact-submit-btn {
   background: var(--primary-accent);
-  color: var(--background-card);
+  color: white;
   padding: 12px 32px;
   border: none;
   border-radius: 6px;
@@ -538,6 +548,7 @@ main {
   width: 100%;
   padding: 12px 16px;
   border: 1px solid var(--border-color);
+  color: white;
   border-radius: 6px;
   font-size: 16px;
   background: var(--secondary-background);
@@ -548,6 +559,7 @@ main {
   outline: none;
   border-color: var(--league-accent);
   background: var(--background-card);
+  color: white;
   box-shadow: 0 0 0 3px rgba(200, 155, 60, 0.1);
 }
 
