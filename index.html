@@ -132,7 +132,7 @@
       <!-- LEAGUE DATA LOOKUP SECTION -->
       <section class="league-lookup">
         <h3>League Data Lookup</h3>
-        <p>Enter a summoner name to see their level and top champions!</p>
+        <p>Enter a Riot ID to see their level and top champions!</p>
 
         <!-- Lookup message container for success/error messages -->
         <div
@@ -141,15 +141,18 @@
           style="display: none"></div>
 
         <div class="lookup-form-container">
-          <!-- Summoner lookup form -->
+          <!-- Riot ID lookup form -->
           <div class="form-group">
-            <label for="summoner-name">Summoner Name</label>
+            <label for="summoner-name">Riot ID</label>
             <input
               type="text"
               id="summoner-name"
               name="summoner-name"
-              placeholder="Enter summoner name"
+              placeholder="GameName#TAG (e.g., Hide on bush#KR1)"
               required />
+            <small style="color: #687078; display: block; margin-top: 4px"
+              >Format: GameName#TAG</small
+            >
           </div>
           <div class="form-group">
             <label for="region">Region</label>
@@ -195,7 +198,7 @@
     <script>
       // League Data Lookup - Calls Riot API via Lambda
       const RIOT_API_URL =
-        "https://3htakjw6jnin3nmrivw62qauoq0nmlqf.lambda-url.us-east-1.on.aws/"; // Replace with your Function URL
+        "https://cvl4jhxrno3vrraond7ecyuuqq0muiyn.lambda-url.ap-south-1.on.aws/"; // Replace with your Function URL
 
       document.addEventListener("DOMContentLoaded", function () {
         const lookupBtn = document.getElementById("lookup-btn");
@@ -209,7 +212,12 @@
           const resultsDiv = document.getElementById("summoner-results");
 
           if (!summonerName) {
-            showMessage("Please enter a summoner name", "error");
+            showMessage("Please enter a Riot ID", "error");
+            return;
+          }
+
+          if (!summonerName.includes("#")) {
+            showMessage("Please use Riot ID format: GameName#TAG", "error");
             return;
           }
 
@@ -243,6 +251,7 @@
               );
             }
           } catch (error) {
+            console.error("Error:", error);
             showMessage("Network error. Please try again.", "error");
           }
 
