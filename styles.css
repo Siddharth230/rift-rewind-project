@@ -491,7 +491,7 @@ main {
 
 .contact-submit-btn:hover {
   background: var(--primary-accent-hover);
-  box-shadow: 0 8px 25px rgba(var(--primary-accent-rgb),0.5);
+  box-shadow: 0 8px 25px rgba(var(--primary-accent-rgb), 0.5);
   transform: translateY(-1px);
 }
 
@@ -569,7 +569,7 @@ main {
 .form-group select:focus {
   outline: none;
   border-color: var(--league-accent);
-  background: var(--background-card);
+  background: var(--secondary-background);
   color: var(--secondary-text);
   box-shadow: 0 0 0 3px rgba(200, 155, 60, 0.1);
 }
