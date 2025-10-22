@@ -1,0 +1,37 @@
+{
+  "matchId": "KR_7858151244",
+  "gameCreation": 1759931449275,
+  "gameDuration": 1873,
+  "gameMode": "CLASSIC",
+  "queueId": 420,
+  "championName": "Lissandra",
+  "championId": 127,
+  "teamPosition": "MIDDLE",
+  "individualPosition": "MIDDLE",
+  "kills": 3,
+  "deaths": 0,
+  "assists": 12,
+  "totalMinionsKilled": 274,
+  "neutralMinionsKilled": 4,
+  "goldEarned": 13012,
+  "totalDamageDealtToChampions": 25527,
+  "totalDamageTaken": 18644,
+  "visionScore": 29,
+  "win": true,
+  "items": [
+    4645,
+    1082,
+    3135,
+    2503,
+    1058,
+    3175,
+    3364
+  ],
+  "summoner1Id": 12,
+  "summoner2Id": 4,
+  "perks": {
+    "primaryStyle": 8100,
+    "subStyle": 8400,
+    "primaryPerk": 8112
+  }
+}

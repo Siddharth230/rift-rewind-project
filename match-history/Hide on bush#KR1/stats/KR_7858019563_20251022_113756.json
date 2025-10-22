@@ -1,0 +1,37 @@
+{
+  "matchId": "KR_7858019563",
+  "gameCreation": 1759928620598,
+  "gameDuration": 1689,
+  "gameMode": "CLASSIC",
+  "queueId": 420,
+  "championName": "Leblanc",
+  "championId": 7,
+  "teamPosition": "MIDDLE",
+  "individualPosition": "MIDDLE",
+  "kills": 6,
+  "deaths": 5,
+  "assists": 2,
+  "totalMinionsKilled": 244,
+  "neutralMinionsKilled": 0,
+  "goldEarned": 12124,
+  "totalDamageDealtToChampions": 25770,
+  "totalDamageTaken": 23137,
+  "visionScore": 42,
+  "win": false,
+  "items": [
+    4645,
+    6655,
+    0,
+    1082,
+    3137,
+    3111,
+    3364
+  ],
+  "summoner1Id": 12,
+  "summoner2Id": 4,
+  "perks": {
+    "primaryStyle": 8100,
+    "subStyle": 8200,
+    "primaryPerk": 8112
+  }
+}

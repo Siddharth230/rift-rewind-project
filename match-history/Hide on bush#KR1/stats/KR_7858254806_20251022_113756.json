@@ -1,0 +1,37 @@
+{
+  "matchId": "KR_7858254806",
+  "gameCreation": 1759933867544,
+  "gameDuration": 1291,
+  "gameMode": "CLASSIC",
+  "queueId": 420,
+  "championName": "Jayce",
+  "championId": 126,
+  "teamPosition": "MIDDLE",
+  "individualPosition": "MIDDLE",
+  "kills": 6,
+  "deaths": 4,
+  "assists": 7,
+  "totalMinionsKilled": 165,
+  "neutralMinionsKilled": 0,
+  "goldEarned": 9400,
+  "totalDamageDealtToChampions": 17487,
+  "totalDamageTaken": 14202,
+  "visionScore": 20,
+  "win": true,
+  "items": [
+    3142,
+    3047,
+    0,
+    3042,
+    1055,
+    0,
+    3340
+  ],
+  "summoner1Id": 12,
+  "summoner2Id": 4,
+  "perks": {
+    "primaryStyle": 8200,
+    "subStyle": 8300,
+    "primaryPerk": 8230
+  }
+}
